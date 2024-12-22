@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartPicture"
+    android:background="@color/shallow_purple">
+
+    <ImageView
+        android:id="@+id/img_start_icon"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cart"
+        android:layout_marginTop="50dp"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_start_icon"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="欢迎开启你的购物车"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"            android:text="Welcome to start your cart"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:layout_below="@+id/ll_start"
+        android:layout_marginTop="20dp"
+        android:text="点击进入"
+        android:textSize="20dp"
+        ></Button>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="#5FFFEB3B">
+
+    <ImageView
+        android:id="@+id/bag_img"
+        android:layout_width="0dp"
+        android:layout_weight="1.8"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/huawei"></ImageView>
+
+    <TextView
+        android:id="@+id/bag_name"
+        android:layout_width="0dp"
+        android:layout_weight="1.8"
+        android:layout_height="wrap_content"
+        android:text="华为手机"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bag_img"></TextView>
+
+    <TextView
+        android:id="@+id/bag_price"
+        android:layout_width="0dp"
+        android:layout_weight="1.3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/bag_three"
+        android:text="20元"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/bag_three"
+        android:layout_width="0dp"
+        android:layout_weight="1.8"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_bag_minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/minus"></ImageButton>
+        <Button
+            android:id="@+id/bag_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shallow_button"></Button>
+        <ImageButton
+            android:id="@+id/btn_bag_plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/plus"></ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>

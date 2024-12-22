@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_background"
+        android:text="退出"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="手机商场"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"></TextView>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/btn_to_bag"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/shopping_bag"></ImageButton>
+
+        <Button
+            android:id="@+id/good_count"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:background="@drawable/orange_ball"
+            android:textColor="@color/white"
+            android:text="0"
+            android:layout_centerVertical="true"></Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CartFragment"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#FFC107"></View>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        app:title="购物车"></androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/txt_cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="购物车空空如也，快去商品主页看看吧"
+        android:textSize="16sp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ry_cart"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/good_in_bag"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#9AFDEF7E">
+            <TextView
+                android:id="@+id/txt_cart_total"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="共计100元"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cart_apply"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bold_btn_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="提交订单"
+            android:textSize="16sp"
+            android:textColor="#96070000"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

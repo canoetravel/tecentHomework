@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#FFC107"></View>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        app:title="所有订单"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_mine_order_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您还没有订单哦，先商城或购物车看看吧"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ry_orders"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/good_in_order"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_orders_close"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bold_btn_background"
+        android:layout_gravity="center"
+        android:text="关闭"
+        android:textSize="18sp"></Button>
+</LinearLayout>

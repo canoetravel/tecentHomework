@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetails">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#FFC107"></View>
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:background="#FFC107"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/img_product_detail_return"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:src="@drawable/icon_leftarrow"></ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:title="详情"
+            android:titleTextColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:background="#FFC107"></Toolbar>
+
+
+        <ImageView
+            android:id="@+id/img_product_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/huawei"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_price"></ImageView>
+
+                <TextView
+                    android:id="@+id/txt_product_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="198"></TextView>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_product_detail_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textSize="20sp"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/txt_product_detail_message"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品详情"
+            android:textColor="#999999"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_product_detail_buynow"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_product_detail_buy"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_background"
+        android:text="立即购买"
+        android:padding="18dp"></Button>
+
+    <Button
+        android:id="@+id/btn_product_detail_buy"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_background"
+        android:text="加入购物车"
+        android:padding="18dp"></Button>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
